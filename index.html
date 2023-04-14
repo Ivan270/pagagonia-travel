@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://kit.fontawesome.com/20f174dca2.js"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<script defer src="./assets/js/script.js"></script>
+		<title>Patagonia Travel</title>
+	</head>
+	<body>
+		<!-- NAVBAR START -->
+		<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">Patagonia Travel</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse text-end" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Inicio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- NAVBAR END -->
+		<main class="container text-center my-5">
+			<h1 class="display-6">¿Qué actividad te gustaría hacer?</h1>
+			<!-- SELECT -->
+			<div class="row justify-content-center my-4">
+				<div class="col-10 col-md-8 col-lg-2">
+					<select class="form-select" name="actividad" id="actividad">
+						<option value="" selected>Elige actividad</option>
+						<option value="trekking">Trekking</option>
+						<option value="natacion">Natacion</option>
+						<option value="ferry">Ferry</option>
+					</select>
+				</div>
+			</div>
+			<!-- DISPLAY ACTIVIDAD -->
+			<div class="row justify-content-center" id="cardWrapper">
+				<div class="col-10">
+					<div class="card text-start border-0 mb-2">
+						<div class="card-body border rounded p-0">
+							<img
+								class="card-img rounded p-0"
+								src="https://picsum.photos/id/684/1280/720?grayscale&blur=5"
+								alt=""
+								width="100%"
+								id="cardImg"
+							/>
+							<div
+								class="d-none card-img-overlay rounded bg-black bg-opacity-50 text-white text-center d-flex flex-column justify-content-center"
+								id="overlay"
+							>
+								<h2
+									class="card-title fw-light text-uppercase mb-3"
+									id="cardTitle"
+								></h2>
+								<h5 class="card-subtitle fw-bolder">
+									<i
+										class="fa-2xs fa-solid fa-location-dot me-2"
+										id="cardSubtitle"
+									></i>
+								</h5>
+							</div>
+						</div>
+					</div>
+					<div class="card text-start border-0">
+						<div class="card-footer border rounded">
+							<p class="card-text" id="cardText"></p>
+							<a href="#" class="btn btn-outline-secondary btn-sm"
+								>Agendar una actividad</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
